@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="873.0" prefWidth="1304.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Hompage_Controller">
+    <center>
+      <BorderPane BorderPane.alignment="TOP_LEFT">
+         <center>
+              <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0">
+                  <children>
+                      <ImageView fx:id="imageView" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_LEFT">
+                          <image>
+                              <Image url="@../images/left.png" />
+                          </image>
+                      </ImageView>
+                  </children>
+              </StackPane>
+         </center>
+         <right>
+            <BorderPane BorderPane.alignment="CENTER">
+               <left>
+                  <BorderPane BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="190.0" top="-250.0" />
+                     </BorderPane.margin>
+                     <center>
+                        <StackPane>
+                           <children>
+                              <GridPane alignment="CENTER_RIGHT" hgap="10.0" prefWidth="484.0" vgap="10.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button id="connectionBtn" fx:id="connectionBtn" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoConnection" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Connection" textAlignment="CENTER">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <graphic>
+                                          <ImageView fitHeight="77.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/water-meter.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                    </Button>
+                                    <Button id="readingBtn" fx:id="readingBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoReading" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Reading" textAlignment="CENTER" GridPane.columnIndex="1">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="69.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/magnifying-glass.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="billsandpaymentBtn" fx:id="bapBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoBillsAndPayment" prefHeight="130.0" prefWidth="178.0" style="-fx-background-radius: 20;" text="Bills and Payment" textAlignment="CENTER" GridPane.columnIndex="2">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="64.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/payment-method.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="consumersBtn" fx:id="gotoConsumerBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoConsumerInfo" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Consumers Info" textAlignment="CENTER" GridPane.rowIndex="1">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="79.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/customer.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="adminAccountBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoUserManagement" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="User Management (ADMINS)" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="77.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/programmer.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="reconnectionBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoPosting" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Posting" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="67.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/image%2010.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="reportsBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoReports" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Reports" textAlignment="CENTER" GridPane.rowIndex="5">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="66.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/immigration.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="basicChargesBtn" fx:id="basicCharges" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoBasicCharges" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Basic Charges" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="66.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/sales.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="announcementBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoAnnouncement" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Announcement" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="77.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../LiliwWaterWorks/src/assets/megaphone.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="reconnectionBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoTransaction" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Transaction History" textAlignment="CENTER" GridPane.rowIndex="3">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="67.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/image.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="reconnectionBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoAnalytics" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Analytics" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="67.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/image%2012.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="reconnectionBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#billingSummary" prefHeight="130.0" prefWidth="160.0" style="-fx-background-radius: 20;" text="Billing Summary" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <effect>
+                                          <DropShadow blurType="GAUSSIAN" height="36.0" radius="17.5" width="36.0">
+                                             <color>
+                                                <Color opacity="0.11753424257040024" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect>
+                                       <graphic>
+                                          <ImageView fitHeight="67.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/image%2011.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button id="buttonRoundedStyle" fx:id="allowReading" mnemonicParsing="false" onAction="#permissioonReading" prefHeight="43.0" prefWidth="158.0" text="Allow Reading" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="-50.0" />
+                                 </padding>
+                                 <StackPane.margin>
+                                    <Insets top="150.0" />
+                                 </StackPane.margin>
+                              </GridPane>
+                              <HBox fx:id="reporting" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="379.0" style="-fx-background-color: #fffceb;" styleClass="paneStyle" visible="false">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2175a1;">
+                                             <children>
+                                                <StackPane>
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Reporting">
+                                                         <StackPane.margin>
+                                                            <Insets left="10.0" top="10.0" />
+                                                         </StackPane.margin>
+                                                         <font>
+                                                            <Font name="System Bold" size="14.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </StackPane>
+                                             </children>
+                                          </Pane>
+                                          <HBox>
+                                             <children>
+                                                <StackPane>
+                                                   <children>
+                                                      <Button id="backButtonDesign" fx:id="back" mnemonicParsing="false" onAction="#closeReporting" prefHeight="37.0" prefWidth="43.0">
+                                                         <graphic>
+                                                            <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../LiliwWaterWorks/src/assets/arrow-left.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                         <StackPane.margin>
+                                                            <Insets left="-100.0" top="-190.0" />
+                                                         </StackPane.margin>
+                                                      </Button>
+                                                      <ImageView fitHeight="150.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/task-report-regular%201.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </StackPane>
+                                                <VBox alignment="CENTER" prefHeight="400.0" prefWidth="274.0">
+                                                   <children>
+                                                      <Button id="masterButton" fx:id="back1" mnemonicParsing="false" onAction="#gotomasterList" prefHeight="37.0" prefWidth="161.0" text="Consumer Master List" VBox.vgrow="ALWAYS">
+                                                         <VBox.margin>
+                                                            <Insets left="-30.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                      <Button id="masterButton" fx:id="barangay_master_list" mnemonicParsing="false" onAction="#gotoBarangayMasterList" prefHeight="37.0" prefWidth="161.0" text="Barangay Master List">
+                                                         <VBox.margin>
+                                                            <Insets left="-30.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                      <Button id="masterButton" fx:id="back14" mnemonicParsing="false" onAction="#gotoDisconnection" prefHeight="37.0" prefWidth="161.0" text="Disconnected List">
+                                                         <VBox.margin>
+                                                            <Insets left="-30.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets left="-600.0" />
+                                 </StackPane.margin>
+                              </HBox>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </left>
+               <top>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER">
+                     <children>
+                        <ImageView fitHeight="259.0" fitWidth="542.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../assets/Frame%2016.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="150.0" top="100.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Button id="buttonRoundedStyle" fx:id="logout" mnemonicParsing="false" onAction="#logOut" prefHeight="43.0" prefWidth="100.0" text="Logout" StackPane.alignment="TOP_RIGHT">
+                           <StackPane.margin>
+                              <Insets right="200.0" top="10.0" />
+                           </StackPane.margin>
+                        </Button>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </StackPane>
+               </top>
+            </BorderPane>
+         </right>
+      </BorderPane>
+    </center>
+</BorderPane>

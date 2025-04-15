@@ -1,0 +1,413 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+@font-face {
+    font-family: LeagueSpartan-Bold;
+    src: url('file:/C:/Users/trick/Documents/Eclipse/LiliwCapstoneProject/src/fonts/LeagueSpartan-Bold.ttf');
+}
+
+.root {
+    -fx-background-color: #fffdf2;
+}
+
+.table-view {
+    -fx-font-size: 14px;
+}
+
+.table-view .column-header {
+    -fx-background-color: derive(-fx-base, 20%);
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header .label {
+    -fx-alignment: CENTER;
+}
+
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+}
+
+.redText {
+	-fx-text-fill: #9A3334;
+}
+
+.tableStyle .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.tableStyle .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+#loginBtn {
+    -fx-text-box-border: #171717;
+    -fx-background-radius: 10px;
+    -fx-background-color: #2175a1;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'LeagueSpartan-Bold';
+    -fx-font-size: 18px;
+    -fx-cursor: hand; 
+}
+#loginBtn:hover {
+    -fx-background-color: #1e6b8e; 
+}
+#loginBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+.upperRadius {
+    -fx-border-radius: 10px 10px 0px 0px;
+    -fx-background-radius: 10px 10px 0px 0px;
+}
+
+.lowRadius {
+	    -fx-border-radius: 0px 0px 3px 3px;
+    -fx-background-radius: 0px 0px 3px 3px;
+}
+.paneStyle {
+	-fx-border-width: 1.5;
+	-fx-border-style: solid;
+	-fx-border-radius: 3px;
+}
+
+.confirmationStyle {
+	-fx-border-width: 1.5;
+	-fx-border-style: solid;
+	-fx-border-radius: 10;
+}
+
+#superRounded {
+    -fx-text-box-border: #171717;
+    -fx-background-radius: 16px;
+    -fx-background-color: #2175a1;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'LeagueSpartan-Bold';
+    -fx-font-size: 18px;
+    -fx-cursor: hand; 
+}
+#superRounded:hover {
+    -fx-background-color: #1e6b8e; 
+}
+#superRounded:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+
+#usernameTextField {
+	-fx-text-box-border: #2175a1;
+	-fx-background-radius: 10px;
+	-fx-font-family: 'LeagueSpartan-Bold';
+	-fx-text-fill: #666680;
+	-fx-font-size: 18px;
+}
+
+#passwordTextField{
+	-fx-text-box-border: #2175a1;
+	-fx-background-radius: 10px;
+	-fx-font-family: 'LeagueSpartan-Bold';
+	-fx-text-fill: #666680;
+	-fx-font-size: 18px;
+}
+
+#passwordTextField{
+	-fx-text-box-border: #2175a1;
+	-fx-background-radius: 10px;
+	-fx-font-family: 'LeagueSpartan-Bold';
+	-fx-text-fill: #666680;
+	-fx-font-size: 18px;
+}
+
+	
+#connectionBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#connectionBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#connectionBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#readingBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#readingBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#readingBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#billsandpaymentBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#billsandpaymentBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#billsandpaymentBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#reconnectionBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#reconnectionBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#reconnectionBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#adminAccountBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#adminAccountBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#adminAccountBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#consumersBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#consumersBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#consumersBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#reportsBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#reportsBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#reportsBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#basicChargesBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#basicChargesBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#basicChargesBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#announcementBtn{
+	-fx-background-color: #dcdad4;
+	-fx-cursor: hand; 
+	-fx-border-radius: 20px;
+	-fx-border-color: #cccac1;
+}
+#announcementBtn:hover {
+    -fx-background-color: dcdad4; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#announcementBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+.button-margin {
+    -fx-padding: 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+    -fx-margin-bottom: 5px; /* Custom margin if using a layout that supports it */
+}
+
+.swithcButton {
+	-fx-background-color: #FFFFFF;
+	-fx-border-color:  #2175A1;
+	-fx-border-radius:  10px;
+	-fx-text-fill:  #000000;
+}
+
+#buttonRoundedStyle {
+    -fx-text-box-border: #171717;
+    -fx-background-radius: 10px;
+    -fx-background-color: #2175a1;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'LeagueSpartan-Bold';
+    -fx-font-size: 14px;
+    -fx-cursor: hand; 
+}
+#buttonRoundedStyle:hover {
+    -fx-background-color: #1e6b8e; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#buttonRoundedStyle:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+
+#goToDashBoardBtn {
+    -fx-text-box-border: #171717;
+    -fx-background-radius: 10px;
+    -fx-background-color: #2175a1;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'LeagueSpartan-Bold';
+    -fx-font-size: 14px;
+    -fx-cursor: hand; 
+}
+#goToDashBoardBtn:hover {
+    -fx-background-color: #1e6b8e; 
+    -fx-font-family: 'LeagueSpartan-SemiBold'; 
+    -fx-font-size: 14px; 
+    -fx-background-radius: 10px; 
+    -fx-padding: 5 10 5 10; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0); 
+    -fx-transition: translateY 0.2s ease; 
+}
+#goToDashBoardBtn:pressed {
+    -fx-background-color: #195875; 
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.2), 10, 0.0, 0, 2);
+}
+#masterButton {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-radius: 10px;
+    -fx-padding: 5 10 5 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+#masterButton:hover {
+    -fx-translate-y: -2px;
+}
+
+#masterButton:pressed {
+    -fx-translate-y: 0px;
+}
+
+
+#backButtonDesign {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 5 10 5 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+#backButtonDesign:hover {
+    -fx-translate-y: -2px;
+}
+
+#backButtonDesign:pressed {
+    -fx-translate-y: 0px;
+}
+
+#TableDesign {
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+.CbDesign {
+    -fx-font-size: 14px;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 10px;
+    -fx-border-color: #c0c0c0;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+    -fx-pref-width: 150px;
+}
+
+.searchdesign{
+	-fx-background-radius: 10px;
+}
+
+.buttonBarDesign {
+	-fx-background-radius: 10px;
+}

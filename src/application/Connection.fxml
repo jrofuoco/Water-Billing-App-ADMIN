@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane style="-fx-background-color: #FFFCEB;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Connection_Controller">
+   <center>
+      <Pane BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane>
+               <center>
+                  <StackPane>
+                     <children>
+                        <ImageView fitHeight="750.0" fitWidth="1668.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/rec.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets top="150.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="323.0" fitWidth="524.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/src/assets/Rectangle%203463449.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="1050.0" top="-200.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="205.0" StackPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/assets/Vector1.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="1300.0" top="-520.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="323.0" fitWidth="524.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/src/assets/Rectangle%203463449.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="5.0" top="-200.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="323.0" fitWidth="524.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/src/assets/Rectangle%203463449.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="1050.0" top="500.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="205.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/assets/2.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="230.0" top="-520.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="200.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/assets/34.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="1300.0" top="180.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <StackPane StackPane.alignment="CENTER">
+                           <StackPane.margin>
+                              <Insets top="440.0" />
+                           </StackPane.margin>
+                           <children>
+                              <ImageView fitHeight="277.0" fitWidth="510.0">
+                                 <image>
+                                    <Image url="@../../../LiliwWaterWorks/src/assets/Vecto1r.png" />
+                                 </image>
+                              </ImageView>
+                              <StackPane>
+                                 <children>
+                                    <Button fx:id="add_Btn" mnemonicParsing="false" onAction="#add">
+                                       <graphic>
+                                          <ImageView fitHeight="65.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/add.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <StackPane.margin>
+                                          <Insets left="20.0" />
+                                       </StackPane.margin>
+                                    </Button>
+                                    <Button fx:id="clear_Btn" mnemonicParsing="false" onAction="#clearCharge">
+                                       <graphic>
+                                          <ImageView fitHeight="65.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/clear.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <StackPane.margin>
+                                          <Insets left="120.0" />
+                                       </StackPane.margin>
+                                    </Button>
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets bottom="260.0" left="350.0" />
+                                 </StackPane.margin>
+                              </StackPane>
+                              <HBox StackPane.alignment="CENTER">
+                                 <StackPane.margin>
+                                    <Insets left="610.0" top="200.0" />
+                                 </StackPane.margin>
+                                 <children>
+                                    <VBox spacing="5.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Meter Fee:" wrappingWidth="199.22850704193115">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Connection Free:" wrappingWidth="199.22850704193115" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inspection Fee:" wrappingWidth="199.22850704193115" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Others/Materials:" wrappingWidth="199.22850704193115" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Saddle Clamp:" wrappingWidth="199.22850704193115" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Miscellaneous" wrappingWidth="199.22850704193115" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </VBox>
+                                    <VBox spacing="5.0">
+                                       <children>
+                                          <Text fx:id="meterFee_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="connectionFee_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="inspectionFee_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="otherFee_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="saddleClamp_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fx:id="miscellaneous_Text" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="160.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </StackPane>
+                        <ImageView fitHeight="19.0" fitWidth="180.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/src/assets/Official%20Receipt%20(OR)_.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets right="260.0" top="770.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="323.0" fitWidth="524.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/src/assets/Rectangle%203463449.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="1060.0" top="-200.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="42.0" fitWidth="170.0">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/assets/3.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets left="785.0" top="-520.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </center>
+            </BorderPane>
+            <Group layoutX="650.0" layoutY="239.0">
+               <children>
+                  <Text layoutX="45.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account No:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="51.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="20.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Middle Name:" x="13.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="61.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="7.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="accountNo_field" layoutX="155.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="firstName_field" layoutX="155.0" layoutY="35.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="lastName_field" layoutX="155.0" layoutY="70.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="middleName_field" layoutX="155.0" layoutY="105.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="company_field" layoutX="155.0" layoutY="140.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="contactNumber_field" layoutX="155.0" layoutY="175.0" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </Group>
+            <Group layoutX="133.0" layoutY="230.0">
+               <children>
+                  <Text layoutX="17.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection No:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="connection_field" layoutX="147.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Text layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connection Type:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="56.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="House No:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barangay Code:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="connectionTypCB" layoutX="147.0" layoutY="35.0" onAction="#checkConnectionType" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="houseNo_field" layoutX="147.0" layoutY="70.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="barangayCode_field" layoutX="147.0" layoutY="105.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="barangay_field" layoutX="147.0" layoutY="140.0" prefHeight="30.0" prefWidth="200.0" />
+                  <Button id="backButtonDesign" fx:id="baranggayCode_Btn" layoutX="307.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchCode">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/assets/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text layoutX="59.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barangay:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <Group layoutX="1190.0" layoutY="230.0">
+               <children>
+                  <Text layoutX="47.0" layoutY="5.705078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Meter No:" y="15.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="23.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meter Brand:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meter Fee:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="19.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Applied:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Installed:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="12.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Installed:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="meterNumber_field" layoutX="140.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="meterBrand_field" layoutX="140.0" layoutY="35.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="meterFee_field" layoutX="140.0" layoutY="70.0" prefHeight="30.0" prefWidth="175.0" />
+                  <DatePicker fx:id="dateApplied_calendar" layoutX="140.0" layoutY="105.0" prefHeight="30.0" prefWidth="200.0" />
+                  <CheckBox fx:id="installed_cb" layoutX="140.0" layoutY="145.0" mnemonicParsing="false" />
+                  <CheckBox fx:id="checkMeterFee_Btn" layoutX="323.0" layoutY="75.0" mnemonicParsing="false" onAction="#fetchBasicCharges" />
+                  <DatePicker fx:id="dateInstalled_calendar" layoutX="140.0" layoutY="175.0" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </Group>
+            <Group layoutX="133.0" layoutY="590.0">
+               <children>
+                  <Text layoutX="40.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meter Fee:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="5.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Other Charges:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="16.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Amount:">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="meterfee1_field" layoutX="140.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="othercharges_field" layoutX="140.0" layoutY="35.0" prefHeight="30.0" prefWidth="200.0" />
+                  <TextField fx:id="totalAmount_Field" layoutX="140.0" layoutY="70.0" prefHeight="30.0" prefWidth="200.0" />
+               </children>
+            </Group>
+            <TextField fx:id="official_reciept" layoutX="810.0" layoutY="820.0" prefHeight="30.0" prefWidth="200.0" />
+            <TextField fx:id="accountNumber" layoutX="410.0" layoutY="110.0" prefHeight="30.0" prefWidth="200.0" visible="false" />
+            <Button id="backButtonDesign" fx:id="search_account" layoutX="605.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchAccount" visible="false">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../LiliwWaterWorks/assets/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <StackPane fx:id="otherCharges_SP" layoutX="10.0" layoutY="10.0" visible="false">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="506.0">
+                     <children>
+                        <StackPane>
+                           <children>
+                              <Pane prefHeight="40.0" prefWidth="506.0" style="-fx-border-color: #2175A1; -fx-background-color: #2175A1; -fx-border-width: 1.5; -fx-border-style: solid;" styleClass="upperRadius">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Pane>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Other Charges" StackPane.alignment="TOP_LEFT">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets left="20.0" top="8.0" />
+                                 </StackPane.margin>
+                              </Text>
+                              <Button id="backButtonDesign" fx:id="closeOtherCharges_Btn" mnemonicParsing="false" onAction="#closeOtherCharges" prefHeight="20.0" prefWidth="25.0" StackPane.alignment="TOP_RIGHT">
+                                 <graphic>
+                                    <ImageView fitHeight="16.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/Vector.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <StackPane.margin>
+                                    <Insets right="20.0" top="8.0" />
+                                 </StackPane.margin>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="159.0" prefWidth="506.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Pane prefHeight="149.0" prefWidth="506.0" style="-fx-border-style: solid; -fx-border-width: 1.3; -fx-background-color: ffffff;" styleClass="lowRadius" />
+                              <HBox fillHeight="false" prefWidth="556.0" StackPane.alignment="CENTER">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                                 <children>
+                                    <GridPane hgap="5.0" prefHeight="67.0" prefWidth="293.0" vgap="5.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="129.98123865341464" minWidth="10.0" prefWidth="85.60378198837557" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.4339604118025" minWidth="10.0" prefWidth="202.4339604118025" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Particular:">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <ChoiceBox fx:id="particular_CB" prefHeight="31.0" prefWidth="213.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" />
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Arial" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="amountOtherCharges_Field" prefHeight="30.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="100.0" top="40.0" />
+                                       </HBox.margin>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                              <HBox spacing="5.0" StackPane.alignment="CENTER">
+                                 <children>
+                                    <Button id="buttonRoundedStyle" fx:id="Undo_Btn" mnemonicParsing="false" onAction="#undoCharge" prefHeight="30.0" prefWidth="80.0" text="Undo" />
+                                    <Button id="buttonRoundedStyle" fx:id="add_Btn" mnemonicParsing="false" onAction="#addCharge" prefHeight="30.0" prefWidth="80.0" text="Add" />
+                                    <Button id="buttonRoundedStyle" fx:id="cancel_Btn" mnemonicParsing="false" onAction="#closeOtherCharges" prefHeight="30.0" prefWidth="80.0" text="Cancel" />
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets left="140.0" top="115.0" />
+                                 </StackPane.margin>
+                              </HBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="575.0" top="400.0" />
+               </padding>
+            </StackPane>
+            <StackPane fx:id="confim_SP" visible="false">
+               <children>
+                  <VBox>
+                     <StackPane.margin>
+                        <Insets left="650.0" top="320.0" />
+                     </StackPane.margin>
+                     <children>
+                        <StackPane prefHeight="250.0" prefWidth="400.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" VBox.vgrow="ALWAYS">
+                           <children>
+                              <ImageView fitHeight="315.0" fitWidth="262.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Badge.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox fillWidth="false">
+                                 <children>
+                                    <Text fx:id="textpayment" strokeType="OUTSIDE" strokeWidth="0.0" text="The payment of PHP 950 for Orlina, Joshua R. (Account Number: KB-16) for the charges. Please confirm to proceed." textAlignment="CENTER" wrappingWidth="200.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox fillHeight="false" spacing="5.0">
+                                       <children>
+                                          <Button id="buttonRoundedStyle" fx:id="clearBtn1" mnemonicParsing="false" onAction="#closeConfirmPayment" prefHeight="43.0" prefWidth="112.0" style="-fx-background-color: #878787;" text="Back" />
+                                          <Button id="buttonRoundedStyle" fx:id="confirmPayment_Btn" mnemonicParsing="false" onAction="#confirmPayment" prefHeight="43.0" prefWidth="112.0" text="Confirm" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="-14.5" top="30.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets left="100.0" top="130.0" />
+                                 </StackPane.margin>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane fx:id="brgySelect_SP" layoutX="600.0" layoutY="200.0" prefHeight="150.0" prefWidth="200.0" visible="false">
+               <children>
+                  <ImageView fitHeight="728.0" fitWidth="469.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/selectBrgy.png" />
+                     </image>
+                  </ImageView>
+                  <StackPane prefHeight="456.0" prefWidth="469.0" StackPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="brgy_tbl" prefHeight="200.0" prefWidth="394.0" style="-fx-border-color: #000000; -fx-border-radius: 3; -fx-background-radius: 3; -fx-border-width: 1;">
+                          <columns>
+                            <TableColumn fx:id="code_Column" prefWidth="75.0" text="Code" />
+                            <TableColumn fx:id="barangay_Column" prefWidth="75.0" style="-fx-border-radius: 10;" text="Barangay" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="80.0" />
+                     </padding>
+                  </StackPane>
+                  <TextField fx:id="barangayCode_field1" prefHeight="30.0" prefWidth="168.0" style="-fx-border-radius: 30; -fx-background-radius: 30;" StackPane.alignment="TOP_RIGHT">
+                     <StackPane.margin>
+                        <Insets left="250.0" right="20.0" top="43.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <Button id="backButtonDesign" fx:id="baranggayCode_Btn1" mnemonicParsing="false" onAction="#searchCode" StackPane.alignment="TOP_RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../LiliwWaterWorks/assets/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <StackPane.margin>
+                        <Insets right="15.0" top="40.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <Button id="backButtonDesign" fx:id="backReadingBtn1" mnemonicParsing="false" onAction="#closebrgySelect" prefHeight="24.0" prefWidth="27.0" StackPane.alignment="TOP_RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="10.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Vector.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <StackPane.margin>
+                        <Insets right="20.0" top="5.0" />
+                     </StackPane.margin>
+                  </Button>
+               </children>
+            </StackPane>
+            <HBox spacing="10.0">
+               <children>
+                  <Button id="buttonRoundedStyle" fx:id="saveNew" mnemonicParsing="false" onAction="#insertDataIntoDatabase" prefHeight="43.0" prefWidth="148.0" text="Save" />
+                  <Button id="buttonRoundedStyle" fx:id="clearBtn" mnemonicParsing="false" onAction="#clearFields" prefHeight="43.0" prefWidth="112.0" text="Clear" />
+                  <Button id="buttonRoundedStyle" fx:id="editBtn" mnemonicParsing="false" onAction="#edit" prefHeight="43.0" prefWidth="112.0" text="Edit" />
+               </children>
+               <padding>
+                  <Insets left="5.0" top="100.0" />
+               </padding>
+            </HBox>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="-60.0" top="40.0" />
+         </BorderPane.margin>
+         <center>
+            <ImageView fitHeight="165.0" fitWidth="434.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../LiliwWaterWorks/assets/Meter%20Connection.png" />
+               </image>
+            </ImageView>
+         </center>
+         <left>
+            <Button id="backButtonDesign" fx:id="backReadingBtn" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="43.0" BorderPane.alignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../LiliwWaterWorks/src/assets/arrow-left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <BorderPane.margin>
+                  <Insets left="45.0" right="-45.0" />
+               </BorderPane.margin>
+            </Button>
+         </left>
+      </BorderPane>
+   </top>
+   <padding>
+      <Insets left="30.0" />
+   </padding>
+</BorderPane>

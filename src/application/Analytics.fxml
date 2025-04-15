@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="975.0" prefWidth="1496.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Analytics_Controller">
+   <top>
+      <StackPane prefHeight="114.0" prefWidth="1080.0" style="-fx-background-color: #FFFCEB;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="478.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+               <image>
+                  <Image url="@../images/analytics.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets right="20.0" top="5.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Button id="backButtonDesign" fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="43.0" StackPane.alignment="TOP_LEFT">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../LiliwWaterWorks/src/assets/arrow-left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" top="30.0" />
+         </padding>
+      </StackPane>
+   </top>
+   <center>
+      <VBox prefWidth="1191.0" spacing="30.0" style="-fx-background-color: #FFFCEB;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="213.0" prefWidth="1041.0" spacing="30.0" style="-fx-background-color: #FFFCEB;">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-width: 1.5; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                           <image>
+                              <Image url="@../images/Total%20Revenue%20Collected.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="total_revenue_Text" fill="#2175a1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000,000">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-width: 1.5; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                           <image>
+                              <Image url="@../images/Outstanding%20Balance.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets top="20.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Text fx:id="outstanding_balaance_text" fill="#2175a1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000,000">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-width: 1.5; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="165.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                           <image>
+                              <Image url="@../images/Active%20Consumers.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets top="20.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Text fx:id="active_customers_text" fill="#2175a1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000,000">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-border-width: 1.5; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                           <image>
+                              <Image url="@../images/Unpaid%20Accounts.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets top="22.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Text fx:id="overdue_accounts_text" fill="#2175a1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="1,000,000">
+                           <font>
+                              <Font name="System Bold" size="43.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="583.0" prefWidth="1436.0" spacing="30.0">
+               <children>
+                  <StackPane prefHeight="371.0" prefWidth="639.0" style="-fx-border-width: 1.5; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <StackedBarChart fx:id="barangay_stackedbarchart">
+                          <xAxis>
+                            <CategoryAxis fx:id="barangay" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </StackedBarChart>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="583.0" prefWidth="0.0" style="-fx-border-width: 1.5; -fx-border-style: solid; -fx-border-radius: 10; -fx-background-color: #ffffff;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+                           <image>
+                              <Image url="@../images/Outstanding%20Payments.png" />
+                           </image>
+                           <StackPane.margin>
+                              <Insets top="20.0" />
+                           </StackPane.margin>
+                        </ImageView>
+                        <Group StackPane.alignment="CENTER">
+                           <children>
+                              <PieChart fx:id="piechart" />
+                           </children>
+                        </Group>
+                     </children></StackPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
